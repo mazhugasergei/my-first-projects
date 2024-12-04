@@ -1,0 +1,201 @@
+@font-face{
+	src: url("Fonts/Ubuntu-Medium.ttf");
+	font-family: UbuntuMedium;
+}
+@font-face{
+	src: url("Fonts/Poppins-Bold.ttf");
+	font-family: PoppinsBold;
+}
+@font-face{
+	src: url("Fonts/Poppins-Regular.ttf");
+	font-family: PoppinsRegular;
+}
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	
+}
+
+.section-1{																										/*Section 1*/
+	background: linear-gradient(71.5deg, #e9e9e9 50%, #00f4d3 50%);
+	height: 100vh;
+}
+nav{																									/*Navbar*/
+	z-index: 2;
+	display: flex;
+	justify-content: space-between;
+	width: 73.25%;
+	padding-top: 6.5vh;
+	margin-left: auto; margin-right: auto;
+}
+.logo{																									  /*Logo*/
+	display: flex;
+	z-index: 2;
+	height: 40px;
+	position: relative;
+	top: 3px;
+	z-index: 2;
+}
+.logo-icon{
+	background: url("Images/Logo.png");
+	background-size: 40px 36px;
+	width: 40px; height: 36px;
+}
+.logo-text{
+	font-family: UbuntuMedium;
+	font-size: 25px;
+	color: #61e9c2;
+	margin-left: 7px;
+}
+.logo:hover{
+	text-decoration: none;
+}
+
+#burger-menu{																					   /*Burger Menu*/
+	z-index: 2;
+	background: #000;
+	width: 54px; height: 54px;
+	border-radius: 50%;
+}
+#burger-menu input
+{
+	display: block;
+	width: 55px; height: 55px;
+	position: absolute;
+	cursor: pointer;
+	opacity: 0;
+	z-index: 3;
+}
+#burger-menu span
+{
+	position: relative;
+	top: 20px;
+	left: 17px;
+	display: block;
+	width: 20px;
+	height: 2px;
+	margin-bottom: 4px;
+	position: relative;
+	background: #fff;
+	border-radius: 3px;
+	transform-origin: 0px 1px;
+	transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+#burger-menu input:checked ~ span:nth-last-child(1)
+{
+	transform: rotate(-45deg) translate(1px, 3px);
+	width: 21px;
+}
+#burger-menu input:checked ~ span:nth-last-child(3)
+{
+	transform: rotate(45deg) translate(1px, -3px);
+}
+#burger-menu input:checked ~ span:nth-last-child(2)
+{
+	opacity: 0;
+	transform: rotate(0deg);
+}
+
+.manual-radio{																							 /*Radio*/
+	width: 13px; height: 13px;
+	border: 2px solid black;
+	border-radius: 50%;
+	cursor: pointer;
+	transition: 0.2s;
+	z-index: 2;
+}
+.manual-radio:hover{
+	background: #000;
+}
+.labels{
+	width: 45px;
+	height: 13px;
+	display: flex;
+	justify-content: space-between;
+	margin-right: 20px;
+	vertical-align: middle;
+	margin-top: auto; margin-bottom: auto;
+}
+.radios{
+	display: none;
+}
+
+.slider{																								/*Slider*/
+	width: 100%;
+	height: 100vh;
+	overflow: hidden;
+	position: absolute;
+	top: 0;
+	z-index: 1;
+}
+#slides{
+	width: 200%;
+	height: 100vh;
+	display: flex;
+	transition: 1.25s;
+}
+#slide1, #slide2{
+	width: 100%;
+	height: 100vh;
+}
+#slide1{
+	padding-top: 10vh;
+}
+#slide2{
+	padding-top: 5vh;
+}
+.bg1, .bg2{
+	width: 100%;
+	background-repeat: no-repeat !important;
+	background-position: center center !important;
+}
+.bg1{
+	height: 85vh;
+	background: url("Images/Img1.png");
+	background-size: contain;
+}
+.bg2{
+	margin-left: 2vw;
+	height: 80vh;
+	background: url("Images/Img2.png");
+	background-size: contain;
+}
+
+.nike-logo{																							 /*Nike Logo*/
+	background: url(Images/Nike.png);
+	background-repeat: no-repeat;
+	width: 317px; height: 114px;
+	z-index: 2;
+	margin-top: 10.77vh;
+}
+
+.sbb{																							/*Shop by Brands*/
+	font-family: PoppinsBold;
+	font-size: 24px;
+	letter-spacing: 2px;
+	z-index: 2;
+	width: 302px;
+	height: 70px;
+	background: url(Images/111.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	display: flex;
+	justify-content: flex-end;
+}
+
+.nike-text{
+	color: #8f8f8f;
+	font-family: PoppinsRegular;
+	font-size: 14px;
+	z-index: 2;
+	position: absolute;
+	padding-top: 0;
+	width: 100%;
+	bottom: 28vh;
+}

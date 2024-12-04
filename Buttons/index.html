@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="style_media.css">
+	<link rel="stylesheet" href="Plugins/aos/aos.css">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+</head>
+<body>
+
+
+
+<div style="display: flex;">
+
+<!--1-->
+<div class="container" data-aos="fade-up" data-aos-duration="800">
+
+	<div id="buttonAa" onmousedown="AaDown();" onmouseup="AaUp();"><div id="Aa">Aa</div></div>
+
+	<div id="share" onmousedown="shareDown();" onmouseup="shareUp();"><div id="shareText">Share</div><div id="shareIcon"></div></div>
+
+	<div id="label" onmousedown="labelDown();" onmouseup="labelUp();"><div id="labelIcon"></div><div id="labelText">Label</div></div>
+
+</div>
+
+
+<!--2-->
+<div class="container" data-aos="fade-up" data-aos-duration="900">
+
+	<div id="button" onmousedown="buttonDown();" onmouseup="buttonUp();"><div id="buttonText">Button</div></div>
+
+	<form action=""><input type="text" id="input" placeholder="Input"></form>
+
+	<div class="dd-cont">
+		<div id="dd">
+			<div id="ddUp" onclick="ddUp();"></div>
+			<div id="ddText" onclick="ddDown();">Dropdown<div id="ddIcon"></div></div>
+		</div>
+		<div id="ddmenu">
+			<div class="dd-section">Free cookies</div>
+			<div class="dd-section">NOT free cookies</div>
+		</div>
+	</div>
+
+	<div id="addUser" onmousedown="addUserDown();" onmouseup="addUserUp();"><div id="addUserIcon"></div><div id="addUserText">Add User</div></div>
+
+</div>
+
+
+<!--3-->
+<div class="container" data-aos="fade-up" data-aos-duration="1000">
+
+	<div id="lrButtons" style="display: flex;">
+		<div id="leftButton" onmousedown="leftButtonDown();" onmouseup="leftButtonUp();"></div>
+		<div id="rightButton" onmousedown="rightButtonDown();" onmouseup="rightButtonUp();"></div>
+	</div>
+
+	<div id="checkboxes" style="display: flex;">
+		<div id="cbA" onmousedown="cbADown();" onmouseup="cbAUp();">
+			<div id="cbAcircle"></div><div id="cbBcircleA"></div>
+		</div>
+		<div id="cbB" onmousedown="cbBDown();" onmouseup="cbBUp();">
+			<div id="cbBcircle"></div><div id="cbBcircleB"></div>
+		</div>
+	</div>
+
+</div>
+
+
+<!--4-->
+<div class="switch" data-aos="fade-up" data-aos-duration="1100">
+	
+	
+
+</div>
+
+</div>
+
+	<div>
+		<form action=""><input type="text" id="search" placeholder="&#xF002;  Search for..." data-aos="fade-up" data-aos-duration="1000"></form>
+	</div>
+
+
+<!--AOS-->
+<script src="Plugins/aos/aos.js"></script>
+<!--script.js-->
+<script src="script.js"></script>
+</body>
+</html>

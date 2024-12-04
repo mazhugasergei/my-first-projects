@@ -1,0 +1,62 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	background: #242424;
+	display: flex;
+}
+
+button{
+	cursor: pointer;
+}
+
+
+
+/*Heart Button*/
+button.heart, button.count{
+	margin: 64px;
+	width: 64px;
+	height: 64px;
+	border: 0px;
+	border-radius: 12px;
+	outline: none;
+	background: #242424;
+	box-shadow: 3px 3px 10px #000, -3px -3px 10px #383838;
+}
+.heart-img-1{background-image: url("Images/heart1.png");}
+.heart-img-2{display: none; background-image: url("Images/heart2.png");}
+
+
+
+/*Count Button*/
+#nothing{background-image: url("Images/nothing.png");}
+#cOne, #cTwo, #cThree, #cFour, #cCountHeart{display: none;}
+#cOne{background-image: url(Images/one.png);}
+#cTwo{background-image: url(Images/two.png);}
+#cThree{background-image: url(Images/three.png);}
+#cFour{background-image: url(Images/four.png);}
+#cCountHeart{background-image: url("Images/heart2.png");}
+
+#lOne, #lTwo, #lThree, #lFour, #lFive{
+	color: transparent;
+}
+
+
+
+button.heart:active, button.count:active{
+	box-shadow: inset 3px 3px 8px #000;
+}
+.heart-img-1:active, .heart-img-2:active, #nothing:active, #cOne:active, #cTwo:active, #cThree:active, #cFour:active, #cCountHeart:active{
+	-webkit-background-size: 60px 60px;
+	background-size: 60px 60px;
+}
+
+.heart-img-1, .heart-img-2, #nothing, #cOne, #cTwo, #cThree, #cFour, #cCountHeart{
+	width: 64px;
+	height: 64px;
+	-webkit-background-size: 64px 64px;
+	background-size: 64px 64px;
+	background-position: center;
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Shoe Shop</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="style_media.css">
+	<!--AOS CSS-->
+	<link rel="stylesheet" href="Plugins/aos/aos.css">
+	<!--Flickity-->
+	<link rel="stylesheet" href="Plugins/flickity/flickity.css">
+	<!--jQuery-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+
+<section class="section-1">																										<!--Section 1-->
+	
+	<nav>																											  <!--Navbar-->
+		
+		<a href="index.html" class="logo">																				<!--Logo-->
+			<div class="logo-icon"></div>
+			<div class="logo-text">Sho<span style="color: #000;">e</span> Shop</div>
+		</a>
+
+		<div style="display: flex; justify-content: space-between;">
+			<div class="radios">				  														 	   <!--Radio Buttons-->
+				<input type="radio" name="radio-btn" id="radio1" checked="checked">
+				<input type="radio" name="radio-btn" id="radio2">
+			</div>
+			<div class="labels">
+				<label for="radio1" class="manual-radio manual-radio-1" id="radio11" onclick="clickRadio1()"></label>
+				<label for="radio2" class="manual-radio manual-radio-2" id="radio22" onclick="clickRadio2()"></label>
+			</div>
+			<div id="burger-menu">																			     <!--Burger Menu-->
+					<input type="checkbox" />
+					<span></span>
+	    			<span></span>
+	    			<span></span>
+			</div>
+		</div>
+
+	</nav>
+
+	<div class="slider">												   					  		 		   	      <!--Slider-->
+		<div id="slides">
+			<div id="slide1">
+				<div class="bg1"></div>
+			</div>
+			<div id="slide2">
+				<div class="bg2"></div>
+			</div>
+		</div>
+	</div>
+
+	<nav style="padding-top: 0;">															 					   <!--Nike Logo-->
+		<div class="nike-logo"></div>
+		<div></div>
+	</nav>
+
+	<nav style="padding-top: 0; width: 67%; margin-top: 29px;">												  <!--Shop by Brands-->
+		<div class="sbb"><div style="display: table;
+									width: 290px; height: 58px;
+									text-align: center;">
+			<div style="display: table-cell; vertical-align: middle; cursor: default;">SHOP BY BRANDS</div>
+		</div></div>
+		<div></div>
+	</nav>
+
+	<nav class="nike-text"><div style="transform: rotate(-90deg); position: absolute; left: -5px; cursor: default;">Nike, originally known as Blue Ribbon Sports<br> was founded by University of Oregon track<br> athlete Phil Knight.</div></nav>
+	
+</section>
+
+<!--AOS JS-->
+<script src="Plugins/aos/aos.js"></script>
+<!--Flickity-->
+<script src="Plugins/flickity/flickity.js"></script>
+<!--script.js-->
+<script src="script.js"></script>
+</body>
+</html>
